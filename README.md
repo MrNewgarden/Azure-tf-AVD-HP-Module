@@ -11,9 +11,9 @@
 
 ## Customizable module properties 
 
-- rdp_properties 
-  -- description = RDP hostpool properties, also has a "ignore lifecycle change" tag on it, as scaling plans would not update the code..
-  default     = audiocapturemode:i:1;audiomode:i:0;redirectprinters:i:1;drivestoredirect:s:c\\:;autoreconnection enabled:i:1;enablerdsaadauth:i:1;use multimon:i:1;dynamic resolution:i:1;networkautodetect:i:1
+- rdp_properties
+description = RDP hostpool properties, also has a "ignore lifecycle change" tag on it, as scaling plans would not update the code..
+default     = audiocapturemode:i:1;audiomode:i:0;redirectprinters:i:1;drivestoredirect:s:c\\:;autoreconnection enabled:i:1;enablerdsaadauth:i:1;use multimon:i:1;dynamic resolution:i:1;networkautodetect:i:1
 
 - maximum_sessions_allowed 
   type        = number
