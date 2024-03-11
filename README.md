@@ -6,10 +6,10 @@
 ### This module does NOT deploy the following resources:
 - Storage account for FSLogix/profiles
 - Virtual machine
-- Maybe some resources I have forgot to write
+- Probably something else ive forgotten to add
 
 
-# Customizable module properties 
+## Customizable module properties 
 
 rdp_properties 
   description = RDP hostpool properties, also has a "ignore lifecycle change" tag on it, as scaling plans would not update the code..
