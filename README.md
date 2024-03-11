@@ -59,8 +59,8 @@ default = West Europe<br/><br/>
 <summary>root_name</summary>
 description = Should be a unique identifier, short name for a customer, project or something<br/><br/>
 default = csn<br/><br/>
-</details> 
-<br/><br/>
+</details>
+
 <details>
 <summary>subscription_id</summary>
 description = Subscription ID where virtual machine sessions hosts are located, this should be it's own subscription ID in production environments<br/><br/>
