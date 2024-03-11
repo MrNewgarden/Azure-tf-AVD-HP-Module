@@ -68,7 +68,7 @@ default = null
 </details> 
 
 <details>
-  <summary>apps
+  <summary>apps</summary>
 type= map(string)
 description = Name of apps that will be deployed in a key value pair for each app
 default = 
