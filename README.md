@@ -12,63 +12,63 @@
 ## Customizable module properties 
 
 <details>
-<br/><br/><summary>rdp_properties</summary>
+<summary>rdp_properties</summary>
 description = RDP hostpool properties, also has a "ignore lifecycle change" tag on it, as scaling plans would not update the code..<br/><br/>
 default = audiocapturemode:i:1;audiomode:i:0;redirectprinters:i:1;drivestoredirect:s:c\\:;autoreconnection enabled:i:1;enablerdsaadauth:i:1;use multimon:i:1;dynamic resolution:i:1;networkautodetect:i:1<br/><br/>
 </details>
 
 <details>
-<br/><br/><summary>maximum_sessions_allowed</summary>
+<summary>maximum_sessions_allowed</summary>
 type= number<br/><br/>
 description = Maximum hostpool sessions allowed on session hosts in host pool<br/><br/>
 default = 10<br/><br/>
 </details> 
 
 <details>
-<br/><br/><summary>type</summary>
+<summary>type</summary>
 description = What hostpool type to use in the hostpool<br/><br/>
 default = Pooled<br/><br/>
 </details> 
 
 <details>
-<br/><br/><summary>load_balancer_type</summary>
+<summary>load_balancer_type</summary>
 description = Acceptable values are: BreadthFirst, DepthFirst or Persistent<br/><br/>
 default = DepthFirst<br/><br/>
 </details>
 
 <details>
-<br/><br/><summary>security_enabled</summary>
+<summary>security_enabled</summary>
 description = Whether the group is a security group for controlling access to in-app resources. At least one of security_enabled or mail_enabled must be specified. A group can be security enabled and mail enabled<br/><br/>
 default = true<br/><br/>
 </details> 
 
 <details>
-<br/><br/><summary>start_vm_on_connect</summary>
+<summary>start_vm_on_connect</summary>
 type= bool<br/><br/>
 description = Start the VM on connect if no available sessions<br/><br/>
 default = true<br/><br/>
 </details> 
 
 <details>
-<br/><br/><summary>location</summary>
+<summary>location</summary>
 description = Where will the host pool be deployed<br/><br/>
 default = West Europe<br/><br/>
 </details> 
 
 <details>
-<br/><br/><summary>root_name</summary>
+<summary>root_name</summary>
 description = Should be a unique identifier, short name for a customer, project or something<br/><br/>
 default = csn<br/><br/>
 </details> 
-<br/><br/><br/><br/>
+<br/><br/>
 <details>
-<br/><br/><summary>subscription_id</summary>
+<summary>subscription_id</summary>
 description = Subscription ID where virtual machine sessions hosts are located, this should be it's own subscription ID in production environments<br/><br/>
 default = null<br/><br/>
 </details> 
 
 <details>
-<br/><br/><summary>apps</summary>
+<summary>apps</summary>
 type= map(string)<br/><br/>
 description = Name of apps that will be deployed in a key value pair for each app<br/><br/>
 default =<br/><br/>
@@ -76,27 +76,27 @@ key = value
 </details> 
 
 <details>
-<br/><br/><summary>hostpool</summary>
+<summary>hostpool</summary>
 description = Name of hostpool that will be deployed<br/><br/>
-default = prod-01
+default = prod-01<br/><br/>
 </details> 
 
 <details>
-<br/><br/><summary>validate_environment</summary>
+<summary>validate_environment</summary>
 type= bool<br/><br/>
 description = Wether to validate environment or not<br/><br/>
-default = false
+default = false <br/><br/>
 </details>
 
 <details>
-<br/><br/><summary>create_scaling_plan</summary>
+<summary>create_scaling_plan</summary>
 type= bool<br/><br/>
 description = true or false if you want to create scaling plan and attach to the host pool<br/><br/>
-default = false
+default = false <br/><br/>
 </details>
 
 <details>
-<br/><br/><summary>avd_displayname</summary>
+<summary>avd_displayname</summary>
 description = Display name of Azure Virtual Desktop Enterprise application in Entra ID<br/><br/>
-default = Azure Virtual Desktop
+default = Azure Virtual Desktop <br/><br/>
 </details>
